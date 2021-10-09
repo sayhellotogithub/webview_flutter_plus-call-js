@@ -1,0 +1,16 @@
+<html>
+<head>
+</head>
+<body>
+<h1 id="title">call js</h1>
+<script type="text/javascript">
+    function fromFlutter(title){
+      document.getElementById("title").innerHTML = title;
+      sendBack();
+    }
+    function sendBack() {
+       messageHandler.postMessage("Hello from JS");
+    }
+</script>
+</body>
+</html>
